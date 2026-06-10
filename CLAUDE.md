@@ -23,7 +23,7 @@ Não há suíte de testes neste projeto.
 
 ## Arquitetura
 
-Portfólio single-page (sem rotas, sem backend). `App.tsx` empilha as seções em ordem fixa: `Header → Hero → About → Timeline → Blocks`. Cada seção é um componente em `src/components/`. Conteúdo (timeline, blocks) é hardcoded em arrays tipados dentro do próprio componente — não vem de CMS/API.
+Portfólio single-page (sem rotas, sem backend). `App.tsx` empilha as seções em ordem fixa: `Hero → Timeline → Leadership → Blocks → Footer`. Cada seção é um componente em `src/components/`. Conteúdo (timeline, leadership, blocks) é hardcoded em arrays tipados dentro do próprio componente — não vem de CMS/API.
 
 `main.tsx` envolve a app no `ReactLenis` (scroll suave via `lenis`). Dark mode é fixo: classe `dark` no `<html>` (index.html), não há toggle.
 
@@ -31,9 +31,9 @@ Portfólio single-page (sem rotas, sem backend). `App.tsx` empilha as seções e
 
 Toda animação usa `motion` (Framer Motion):
 
-- `SplitText.tsx` — quebra texto em chars, entrada com stagger via `animate`/`stagger`; chars se espalham seguindo velocidade do ponteiro (listener `pointermove`).
-- `RevealLink.tsx` — links com efeito de troca vertical no hover via `variants`.
-- `PixelatedImage.tsx` — filtro SVG (`feMorphology`/`feTile`) aplicado no hover via CSS var `--pixel-filter`.
+- `SplitText.tsx` — quebra texto em chars, entrada com stagger via `animate`/`stagger`.
+- `RevealLink.tsx` — links com efeito de troca vertical no hover via `variants` (usado no `Footer`).
+- `PixelatedImage.tsx` — filtro SVG (`feMorphology`/`feTile`) aplicado via CSS var `--pixel-filter`. Por padrão só no hover (junto do overlay com o título); prop `always` deixa o efeito + overlay sempre ativos.
 
 ### Estilo
 
@@ -43,9 +43,7 @@ Tailwind v4 (config CSS-first, sem `tailwind.config.js`). Tudo vive em `src/inde
 - Variáveis de cor (`--background`, `--foreground`, etc.) em `:root`/`.dark` no formato oklch.
 - Fonte: **Sora** (`@fontsource-variable/sora`) para heading e sans.
 
-### shadcn/ui
-
-`components.json` configurado (style `radix-nova`, baseColor `zinc`, ícones `lucide`). Componentes gerados pelo CLI caem em `src/components/ui/` e a CLI espera o helper `cn` em `src/lib/utils.ts` (`clsx` + `tailwind-merge`). **Ambos os diretórios podem não existir** se nenhum componente shadcn estiver em uso no momento — a CLI os recria ao adicionar um componente. O ESLint ignora `src/components/ui/**` (código gerado).
+> shadcn/ui foi removido (sem componentes em uso): sem `components.json`, sem `src/components/ui/`, deps `shadcn` e `lucide-react` desinstaladas. Para reintroduzir, rode `npx shadcn init` e reinstale `lucide-react`.
 
 ## Convenções
 
