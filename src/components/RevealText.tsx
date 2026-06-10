@@ -3,16 +3,15 @@ import { useEffect, useMemo, useRef } from "react";
 
 const NBSP = String.fromCharCode(160);
 
-type SplitTextProps = {
+type RevealTextProps = {
   text: string;
   className?: string;
 };
 
-export function SplitText({ text, className }: SplitTextProps) {
+export function RevealText({ text, className }: RevealTextProps) {
   const chars = useMemo(() => Array.from(text), [text]);
   const containerRef = useRef<HTMLSpanElement>(null);
 
-  // Entrance: chars rise + fade in, staggered.
   useEffect(() => {
     if (!containerRef.current) return;
     const charEls = Array.from(

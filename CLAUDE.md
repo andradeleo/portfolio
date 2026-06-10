@@ -31,7 +31,7 @@ Portfólio single-page (sem rotas, sem backend). `App.tsx` empilha as seções e
 
 Toda animação usa `motion` (Framer Motion):
 
-- `SplitText.tsx` — quebra texto em chars, entrada com stagger via `animate`/`stagger`.
+- `RevealText.tsx` — quebra texto em chars, entrada com stagger via `animate`/`stagger`.
 - `RevealLink.tsx` — links com efeito de troca vertical no hover via `variants` (usado no `Footer`).
 - `PixelatedImage.tsx` — filtro SVG (`feMorphology`/`feTile`) aplicado via CSS var `--pixel-filter`. Por padrão só no hover (junto do overlay com o título); prop `always` deixa o efeito + overlay sempre ativos.
 

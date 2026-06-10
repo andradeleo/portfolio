@@ -1,9 +1,8 @@
-import { SplitText } from "./SplitText";
+import { RevealText } from "./RevealText";
 
 export function Hero() {
   return (
     <section className="relative flex min-h-[92vh] flex-col items-start justify-center text-left">
-      {/* backdrop — eco "portfolio" (ref4/ref5) */}
       <span
         aria-hidden
         className="pointer-events-none absolute top-4 -left-4 -z-10 text-[14rem] leading-none font-black tracking-tighter text-zinc-900 uppercase select-none lg:text-[20rem]"
@@ -12,19 +11,18 @@ export function Hero() {
       </span>
 
       <h1 className="flex flex-col items-start font-black tracking-tighter uppercase antialiased select-none">
-        <SplitText
+        <RevealText
           text="Olá, eu sou"
           className="mb-4 text-7xl text-zinc-800/40 lg:text-8xl"
         />
         <span className="whitespace-nowrap">
-          <SplitText
+          <RevealText
             text="Leonardo Andrade"
             className="text-6xl text-zinc-100 sm:text-7xl lg:text-8xl xl:text-9xl"
           />
         </span>
       </h1>
 
-      {/* bloco inferior: cargo + intro (ref2/ref3) */}
       <div className="mt-16 grid w-full grid-cols-1 items-start gap-10 lg:grid-cols-[auto_1fr]">
         <span className="pt-1.5 text-sm font-bold tracking-widest text-zinc-500 uppercase">
           Software
