@@ -5,6 +5,7 @@ type PixelatedImageProps = {
   alt: string;
   title?: string;
   className?: string;
+  always?: boolean;
 };
 
 export function PixelatedImage({
@@ -12,6 +13,7 @@ export function PixelatedImage({
   alt,
   title,
   className = "relative",
+  always = false,
 }: PixelatedImageProps) {
   const rawId = useId();
   const filterId = `pixelate-${rawId.replace(/:/g, "")}`;
@@ -24,11 +26,19 @@ export function PixelatedImage({
       <img
         src={src}
         alt={alt}
-        className="h-full w-full cursor-none object-cover transition-[filter] duration-500 ease-in-out group-hover:[filter:var(--pixel-filter)]"
+        className={`h-full w-full cursor-none object-cover transition-[filter] duration-500 ease-in-out ${
+          always
+            ? "[filter:var(--pixel-filter)]"
+            : "group-hover:[filter:var(--pixel-filter)]"
+        }`}
       />
       {title && (
-        <div className="pointer-events-none absolute inset-0 flex items-end bg-gradient-to-t from-black/70 via-black/25 to-transparent p-8 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-          <span className="text-3xl font-bold tracking-tight text-zinc-100">
+        <div
+          className={`pointer-events-none absolute inset-0 flex items-center justify-center bg-black/55 p-2 text-center transition-opacity duration-500 ease-in-out ${
+            always ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+          }`}
+        >
+          <span className="text-xs font-bold tracking-tight text-zinc-100">
             {title}
           </span>
         </div>
