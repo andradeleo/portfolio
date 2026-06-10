@@ -23,7 +23,7 @@ export function Footer() {
             />
             <a
               href="mailto:contato.andradeleo@gmail.com"
-              className="text-4xl font-black tracking-tighter text-zinc-100 transition-colors hover:text-zinc-400 lg:text-6xl"
+              className="text-2xl font-black break-all tracking-tighter text-zinc-100 transition-colors hover:text-zinc-400 sm:text-4xl lg:text-6xl"
             >
               contato.andradeleo@gmail.com
             </a>

@@ -25,9 +25,9 @@ export function Leadership() {
         aprendizado, soft skills e novos conhecimentos.
       </p>
 
-      <dl className="mt-16 flex items-center justify-between gap-10 border-t border-zinc-700 pt-10">
+      <dl className="mt-16 flex flex-col gap-8 border-t border-zinc-700 pt-10 sm:flex-row sm:items-center sm:justify-between sm:gap-10">
         {highlights.map((item) => (
-          <div key={item.label} className="items-left flex flex-col gap-2">
+          <div key={item.label} className="flex flex-col gap-2">
             <dt className="text-6xl font-black tracking-tighter text-zinc-100">
               {item.value}
             </dt>

@@ -5,7 +5,7 @@ export function Hero() {
     <section className="relative flex min-h-[92vh] flex-col items-start justify-center text-left">
       <span
         aria-hidden
-        className="pointer-events-none absolute top-4 -left-4 -z-10 text-[14rem] leading-none font-black tracking-tighter text-zinc-900 uppercase select-none lg:text-[20rem]"
+        className="pointer-events-none absolute top-4 -left-4 -z-10 text-[7rem] leading-none font-black tracking-tighter text-zinc-900 uppercase select-none sm:text-[14rem] lg:text-[20rem]"
       >
         Portfolio
       </span>
@@ -13,12 +13,12 @@ export function Hero() {
       <h1 className="flex flex-col items-start font-black tracking-tighter uppercase antialiased select-none">
         <RevealText
           text="Olá, eu sou"
-          className="mb-4 text-7xl text-zinc-800/40 lg:text-8xl"
+          className="mb-4 text-5xl text-zinc-800/40 sm:text-7xl lg:text-8xl"
         />
         <span className="whitespace-nowrap">
           <RevealText
             text="Leonardo Andrade"
-            className="text-6xl text-zinc-100 sm:text-7xl lg:text-8xl xl:text-9xl"
+            className="text-4xl text-zinc-100 sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"
           />
         </span>
       </h1>
