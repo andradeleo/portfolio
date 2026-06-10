@@ -16,7 +16,7 @@ const blocks: Block[] = [
   },
   {
     title: "Oncrivo",
-    text: "Plataforma que desenvolvo de ponta a ponta, do back-end à interface, cuidando de cada detalhe.",
+    text: "Plataforma que desenvolvo de ponta a ponta, do back-end à interface.",
     href: "https://www.oncrivo.com.br/",
     linkLabel: "↗ oncrivo.com.br",
   },

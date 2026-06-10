@@ -33,7 +33,7 @@ export function Hero() {
         <p className="max-w-2xl text-justify text-lg leading-relaxed tracking-tight text-zinc-400 lg:text-2xl">
           Desenvolvedor full stack com{" "}
           <span className="text-zinc-100">mais de 3 anos de experiência</span>,
-          atualmente construindo com{" "}
+          atualmente construindo software com{" "}
           <span className="text-zinc-100">Angular</span> e{" "}
           <span className="text-zinc-100">Dotnet</span>.
         </p>

@@ -8,26 +8,12 @@ type TimelineEntry = {
 
 const entries: TimelineEntry[] = [
   {
-    period: "MAI 2025 — PRESENTE",
-    role: "Desenvolvedor Full Stack - Pleno",
+    period: "JAN 2024 — PRESENTE",
+    role: "Desenvolvedor Full Stack",
     company: "NDD Tech",
     description:
-      "Correções de bugs, OAuth2, uso de IA para produtividade, Infraestrutura.",
-    tags: [
-      "Angular",
-      "CI/CD",
-      "Docker",
-      "Microsserviços",
-      "Micro-frontends",
-      "C#",
-    ],
-  },
-  {
-    period: "JAN 2024 — MAI 2025",
-    role: "Desenvolvedor Full Stack - Junior",
-    company: "NDD Tech",
-    description: "Construção de design system e correções de bugs.",
-    tags: ["Angular", "TypeScript", "Microsserviços", "Micro-frontends", "C#"],
+      "Construção de design system, Fluxos OAuth2, uso da IA para redução de código legado e mais.",
+    tags: ["Angular", "CI/CD", "Microsserviços", "Micro-frontends", "C#", "IA"],
   },
   {
     period: "JAN 2023 — DEZ 2023",
