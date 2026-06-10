@@ -36,7 +36,7 @@ const blocks: Block[] = [
 
 export function Blocks() {
   return (
-    <section className="mb-48 grid grid-cols-1 gap-x-8 gap-y-12 text-left md:grid-cols-3">
+    <section className="my-32 grid grid-cols-1 gap-x-8 gap-y-12 text-left md:grid-cols-3">
       {blocks.map((block) => (
         <div
           key={block.title}

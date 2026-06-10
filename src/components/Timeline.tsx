@@ -41,7 +41,7 @@ const entries: TimelineEntry[] = [
 
 export function Timeline() {
   return (
-    <section className="my-48 text-left">
+    <section className="my-32 text-left">
       <h2 className="mb-16 text-5xl font-bold tracking-tighter text-zinc-200">
         Carreira
       </h2>
