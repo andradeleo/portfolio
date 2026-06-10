@@ -9,8 +9,8 @@ createRoot(document.getElementById("root")!).render(
     <ReactLenis
       root
       options={{
-        lerp: 0.08,
-        duration: 1.2,
+        lerp: 0.06,
+        duration: 1.6,
         smoothWheel: true,
         wheelMultiplier: 1,
         touchMultiplier: 1.5,
