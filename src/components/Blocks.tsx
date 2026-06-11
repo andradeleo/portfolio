@@ -15,10 +15,8 @@ const blocks: Block[] = [
     text: "Mergulhando em infraestrutura, microservices e micro-frontends para entregar sistemas mais robustos.",
   },
   {
-    title: "Oncrivo",
-    text: "Plataforma que desenvolvo de ponta a ponta, do back-end à interface.",
-    href: "https://www.oncrivo.com.br/",
-    linkLabel: "↗ oncrivo.com.br",
+    title: "Soft skills",
+    text: "Liderança · Trabalho em equipe · Resolução de problemas · Comunicação",
   },
   {
     title: "Graduação",
