@@ -1,6 +1,7 @@
 import { Hero } from "./components/Hero";
 import { Timeline } from "./components/Timeline";
 import { Leadership } from "./components/Leadership";
+import { Posts } from "./components/Posts";
 import { Blocks } from "./components/Blocks";
 import { Footer } from "./components/Footer";
 
@@ -11,6 +12,7 @@ export default function App() {
         <Hero />
         <Timeline />
         <Leadership />
+        <Posts />
         <Blocks />
         <Footer />
       </div>
